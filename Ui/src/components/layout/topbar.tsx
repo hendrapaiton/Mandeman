@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface TopbarProps { }
+type TopbarProps = object
 
 const Topbar: React.FC<TopbarProps> = () => {
   return (
