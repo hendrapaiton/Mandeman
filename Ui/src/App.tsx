@@ -24,8 +24,9 @@ function App() {
         }>
           <Route index element={<Navigate to="/index" />} />
           <Route path="index" element={<Dashboard />} />
-          <Route path="settings" element={<div>Settings Page</div>} />
-          <Route path="logout" element={<div>Logout Page</div>} />
+          <Route path="masuk" element={<div>Surat Masuk</div>} />
+          <Route path="keluar" element={<div>Surat Keluar</div>} />
+          <Route path="config" element={<div>Setting Page</div>} />
         </Route>
         <Route path="login" element={<Login />} />
       </Routes>

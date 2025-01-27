@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-interface SidebarProps { }
+type SidebarProps = object
 
 const Sidebar: React.FC<SidebarProps> = () => {
   const location = useLocation();
@@ -39,8 +39,8 @@ const Sidebar: React.FC<SidebarProps> = () => {
             <span>Surat Keluar</span>
           </Link>
           <Link
-            to="/setting"
-            className={`flex items-center px-6 py-3 transition-colors duration-200 ${location.pathname === '/setting' ? 'text-blue-600 bg-blue-50 border-r-4 border-blue-600' : 'text-gray-700 hover:bg-gray-100'
+            to="/config"
+            className={`flex items-center px-6 py-3 transition-colors duration-200 ${location.pathname === '/config' ? 'text-blue-600 bg-blue-50 border-r-4 border-blue-600' : 'text-gray-700 hover:bg-gray-100'
               }`}
           >
             <i className="bi bi-gear text-lg mr-3"></i>
