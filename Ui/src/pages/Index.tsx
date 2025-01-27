@@ -1,9 +1,9 @@
 import React from 'react';
-import Infografis from '../components/dasbor/Infografis';
-import Terbaru from '../components/dasbor/Terbaru';
-import Aktifitas from '../components/dasbor/Aktifitas';
+import Infografis from '../components/dasbor/infografis';
+import Terbaru from '../components/dasbor/terbaru';
+import Aktifitas from '../components/dasbor/aktifitas';
 
-interface DashboardProps { }
+type DashboardProps = object
 
 const Dashboard: React.FC<DashboardProps> = () => {
   return (

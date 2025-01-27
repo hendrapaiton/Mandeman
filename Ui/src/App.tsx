@@ -3,6 +3,8 @@ import Dashboard from './pages/Index';
 import Layout from './components/layout/Layout';
 import Login from './pages/Login';
 import Config from './pages/Config';
+import Masuk from './pages/Masuk';
+import Keluar from './pages/Keluar';
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const isAuthenticated = true;
@@ -25,8 +27,8 @@ function App() {
         }>
           <Route index element={<Navigate to="/index" />} />
           <Route path="index" element={<Dashboard />} />
-          <Route path="masuk" element={<div>Surat Masuk</div>} />
-          <Route path="keluar" element={<div>Surat Keluar</div>} />
+          <Route path="masuk" element={<Masuk />} />
+          <Route path="keluar" element={<Keluar />} />
           <Route path="config" element={<Config />} />
         </Route>
         <Route path="login" element={<Login />} />
