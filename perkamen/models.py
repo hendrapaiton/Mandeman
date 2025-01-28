@@ -73,7 +73,7 @@ class Masuk(models.Model):
 
     class Meta:
         verbose_name = "Surat Masuk"
-        ordering = ['-tanggal_terima']
+        ordering = ['-created_at']
 
 
 class Keluar(models.Model):
@@ -104,4 +104,4 @@ class Keluar(models.Model):
 
     class Meta:
         verbose_name = "Surat Keluar"
-        ordering = ['-tanggal_kirim']
+        ordering = ['-created_at']
